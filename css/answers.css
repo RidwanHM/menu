@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1b1b1e;
+  color: #faa916;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1.2vw;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #faa916;
+  font-size: 2rem;
+  min-height: 45px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  text-transform: capitalize;
+}
+
+nav a {
+  text-decoration: none;
+  min-height: 45px;
+  transition: all 1200ms ease;
+}
+
+a.is-active {
+  color: #09814a;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #96031a;
+  font-weight: bold;
+}

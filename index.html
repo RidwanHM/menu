@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Navigation Lesson Excerise</title>
+  </head>
+  <body>
+    <h1>
+      Let's create a navigation
+    </h1>
+    <button id="js-open-button">Menu</button>
+
+    <aside id="menu">
+      <h2>
+        This is my Menu
+      </h2>
+      <button id="js-close-button">x</button>
+      <nav>
+        <ul>
+          <li><a href="/index.html" class="is-active">Home</a></li>
+          <li><a href="/answers.html">Answers</a></li>
+          <li><a href="/contact.html/">Contact</a></li>
+          <li><a href="/about.htmlntact">About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <script>
+      const closeButton = document.getElementById("js-close-button");
+      const openButton = document.getElementById("js-open-button");
+      const aside = document.getElementById("menu");
+      console.log("foo", aside);
+
+      closeButton.addEventListener("click", myFunction);
+      openButton.addEventListener("click", openMenu);
+
+      function myFunction() {
+        aside.classList.remove("is-active");
+      }
+
+      function openMenu() {
+        console.log("open");
+        aside.classList.add("is-active");
+      }
+    </script>
+  </body>
+</html>
